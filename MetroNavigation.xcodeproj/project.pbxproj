@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D65E15011EA68A9E0012FF04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D65E15001EA68A9E0012FF04 /* main.m */; };
+		D65E15041EA68A9E0012FF04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D65E15031EA68A9E0012FF04 /* AppDelegate.m */; };
+		D65E150A1EA68A9E0012FF04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65E15081EA68A9E0012FF04 /* Main.storyboard */; };
+		D65E150C1EA68A9E0012FF04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65E150B1EA68A9E0012FF04 /* Assets.xcassets */; };
+		D65E150F1EA68A9E0012FF04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65E150D1EA68A9E0012FF04 /* LaunchScreen.storyboard */; };
+		D65E15181EA68AFE0012FF04 /* EMBranch.m in Sources */ = {isa = PBXBuildFile; fileRef = D65E15171EA68AFE0012FF04 /* EMBranch.m */; };
+		D65E151B1EA68B9F0012FF04 /* EMStation.m in Sources */ = {isa = PBXBuildFile; fileRef = D65E151A1EA68B9F0012FF04 /* EMStation.m */; };
+		D65E151E1EA68E020012FF04 /* EMMetroNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65E151D1EA68E020012FF04 /* EMMetroNavigationViewController.m */; };
+		D65E15211EA768EE0012FF04 /* EMSelectStationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65E15201EA768EE0012FF04 /* EMSelectStationViewController.m */; };
+		D65E15281EA7887D0012FF04 /* EMStationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D65E15271EA7887D0012FF04 /* EMStationCell.m */; };
+		D65E15301EA802BD0012FF04 /* resize.png in Resources */ = {isa = PBXBuildFile; fileRef = D65E152E1EA802BD0012FF04 /* resize.png */; };
+		D65E15311EA802BD0012FF04 /* resize@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D65E152F1EA802BD0012FF04 /* resize@2x.png */; };
+		D65E15331EA808260012FF04 /* kyiv_metro.png in Resources */ = {isa = PBXBuildFile; fileRef = D65E15321EA808260012FF04 /* kyiv_metro.png */; };
+		D65E15361EA80A380012FF04 /* UIViewController+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = D65E15351EA80A380012FF04 /* UIViewController+Alert.m */; };
+		D65E153B1EA80F640012FF04 /* EMMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65E153A1EA80F640012FF04 /* EMMapViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D65E14FC1EA68A9E0012FF04 /* MetroNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetroNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65E15001EA68A9E0012FF04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D65E15021EA68A9E0012FF04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D65E15031EA68A9E0012FF04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D65E15091EA68A9E0012FF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D65E150B1EA68A9E0012FF04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D65E150E1EA68A9E0012FF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D65E15101EA68A9E0012FF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D65E15161EA68AFE0012FF04 /* EMBranch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMBranch.h; sourceTree = "<group>"; };
+		D65E15171EA68AFE0012FF04 /* EMBranch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMBranch.m; sourceTree = "<group>"; };
+		D65E15191EA68B9F0012FF04 /* EMStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMStation.h; sourceTree = "<group>"; };
+		D65E151A1EA68B9F0012FF04 /* EMStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMStation.m; sourceTree = "<group>"; };
+		D65E151C1EA68E020012FF04 /* EMMetroNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMetroNavigationViewController.h; sourceTree = "<group>"; };
+		D65E151D1EA68E020012FF04 /* EMMetroNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMetroNavigationViewController.m; sourceTree = "<group>"; };
+		D65E151F1EA768EE0012FF04 /* EMSelectStationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSelectStationViewController.h; sourceTree = "<group>"; };
+		D65E15201EA768EE0012FF04 /* EMSelectStationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMSelectStationViewController.m; sourceTree = "<group>"; };
+		D65E15261EA7887D0012FF04 /* EMStationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMStationCell.h; sourceTree = "<group>"; };
+		D65E15271EA7887D0012FF04 /* EMStationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMStationCell.m; sourceTree = "<group>"; };
+		D65E152E1EA802BD0012FF04 /* resize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resize.png; sourceTree = "<group>"; };
+		D65E152F1EA802BD0012FF04 /* resize@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "resize@2x.png"; sourceTree = "<group>"; };
+		D65E15321EA808260012FF04 /* kyiv_metro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kyiv_metro.png; sourceTree = "<group>"; };
+		D65E15341EA80A380012FF04 /* UIViewController+Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Alert.h"; sourceTree = "<group>"; };
+		D65E15351EA80A380012FF04 /* UIViewController+Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Alert.m"; sourceTree = "<group>"; };
+		D65E15391EA80F640012FF04 /* EMMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMapViewController.h; sourceTree = "<group>"; };
+		D65E153A1EA80F640012FF04 /* EMMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMapViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D65E14F91EA68A9E0012FF04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D65E14F31EA68A9E0012FF04 = {
+			isa = PBXGroup;
+			children = (
+				D65E14FE1EA68A9E0012FF04 /* MetroNavigation */,
+				D65E14FD1EA68A9E0012FF04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D65E14FD1EA68A9E0012FF04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D65E14FC1EA68A9E0012FF04 /* MetroNavigation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D65E14FE1EA68A9E0012FF04 /* MetroNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				D65E15381EA80F410012FF04 /* images */,
+				D65E15021EA68A9E0012FF04 /* AppDelegate.h */,
+				D65E15031EA68A9E0012FF04 /* AppDelegate.m */,
+				D65E15231EA768FA0012FF04 /* Metro Navigation */,
+				D65E153C1EA80F6A0012FF04 /* Map */,
+				D65E15221EA768F20012FF04 /* Select station */,
+				D65E15241EA769090012FF04 /* Branch */,
+				D65E15251EA7690F0012FF04 /* Station */,
+				D65E15081EA68A9E0012FF04 /* Main.storyboard */,
+				D65E150B1EA68A9E0012FF04 /* Assets.xcassets */,
+				D65E150D1EA68A9E0012FF04 /* LaunchScreen.storyboard */,
+				D65E15101EA68A9E0012FF04 /* Info.plist */,
+				D65E15371EA80A3F0012FF04 /* Alert */,
+				D65E14FF1EA68A9E0012FF04 /* Supporting Files */,
+			);
+			path = MetroNavigation;
+			sourceTree = "<group>";
+		};
+		D65E14FF1EA68A9E0012FF04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D65E15001EA68A9E0012FF04 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D65E15221EA768F20012FF04 /* Select station */ = {
+			isa = PBXGroup;
+			children = (
+				D65E151F1EA768EE0012FF04 /* EMSelectStationViewController.h */,
+				D65E15201EA768EE0012FF04 /* EMSelectStationViewController.m */,
+				D65E15291EA788800012FF04 /* Cell */,
+			);
+			name = "Select station";
+			sourceTree = "<group>";
+		};
+		D65E15231EA768FA0012FF04 /* Metro Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				D65E151C1EA68E020012FF04 /* EMMetroNavigationViewController.h */,
+				D65E151D1EA68E020012FF04 /* EMMetroNavigationViewController.m */,
+			);
+			name = "Metro Navigation";
+			sourceTree = "<group>";
+		};
+		D65E15241EA769090012FF04 /* Branch */ = {
+			isa = PBXGroup;
+			children = (
+				D65E15161EA68AFE0012FF04 /* EMBranch.h */,
+				D65E15171EA68AFE0012FF04 /* EMBranch.m */,
+			);
+			name = Branch;
+			sourceTree = "<group>";
+		};
+		D65E15251EA7690F0012FF04 /* Station */ = {
+			isa = PBXGroup;
+			children = (
+				D65E15191EA68B9F0012FF04 /* EMStation.h */,
+				D65E151A1EA68B9F0012FF04 /* EMStation.m */,
+			);
+			name = Station;
+			sourceTree = "<group>";
+		};
+		D65E15291EA788800012FF04 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D65E15261EA7887D0012FF04 /* EMStationCell.h */,
+				D65E15271EA7887D0012FF04 /* EMStationCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		D65E15371EA80A3F0012FF04 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				D65E15341EA80A380012FF04 /* UIViewController+Alert.h */,
+				D65E15351EA80A380012FF04 /* UIViewController+Alert.m */,
+			);
+			name = Alert;
+			sourceTree = "<group>";
+		};
+		D65E15381EA80F410012FF04 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D65E15321EA808260012FF04 /* kyiv_metro.png */,
+				D65E152E1EA802BD0012FF04 /* resize.png */,
+				D65E152F1EA802BD0012FF04 /* resize@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		D65E153C1EA80F6A0012FF04 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D65E15391EA80F640012FF04 /* EMMapViewController.h */,
+				D65E153A1EA80F640012FF04 /* EMMapViewController.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D65E14FB1EA68A9E0012FF04 /* MetroNavigation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65E15131EA68A9E0012FF04 /* Build configuration list for PBXNativeTarget "MetroNavigation" */;
+			buildPhases = (
+				D65E14F81EA68A9E0012FF04 /* Sources */,
+				D65E14F91EA68A9E0012FF04 /* Frameworks */,
+				D65E14FA1EA68A9E0012FF04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetroNavigation;
+			productName = MetroNavigation;
+			productReference = D65E14FC1EA68A9E0012FF04 /* MetroNavigation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D65E14F41EA68A9E0012FF04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Eugene Mekhedov";
+				TargetAttributes = {
+					D65E14FB1EA68A9E0012FF04 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D65E14F71EA68A9E0012FF04 /* Build configuration list for PBXProject "MetroNavigation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D65E14F31EA68A9E0012FF04;
+			productRefGroup = D65E14FD1EA68A9E0012FF04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D65E14FB1EA68A9E0012FF04 /* MetroNavigation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D65E14FA1EA68A9E0012FF04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65E15331EA808260012FF04 /* kyiv_metro.png in Resources */,
+				D65E150F1EA68A9E0012FF04 /* LaunchScreen.storyboard in Resources */,
+				D65E150C1EA68A9E0012FF04 /* Assets.xcassets in Resources */,
+				D65E150A1EA68A9E0012FF04 /* Main.storyboard in Resources */,
+				D65E15301EA802BD0012FF04 /* resize.png in Resources */,
+				D65E15311EA802BD0012FF04 /* resize@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D65E14F81EA68A9E0012FF04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65E151B1EA68B9F0012FF04 /* EMStation.m in Sources */,
+				D65E153B1EA80F640012FF04 /* EMMapViewController.m in Sources */,
+				D65E15281EA7887D0012FF04 /* EMStationCell.m in Sources */,
+				D65E151E1EA68E020012FF04 /* EMMetroNavigationViewController.m in Sources */,
+				D65E15361EA80A380012FF04 /* UIViewController+Alert.m in Sources */,
+				D65E15181EA68AFE0012FF04 /* EMBranch.m in Sources */,
+				D65E15041EA68A9E0012FF04 /* AppDelegate.m in Sources */,
+				D65E15011EA68A9E0012FF04 /* main.m in Sources */,
+				D65E15211EA768EE0012FF04 /* EMSelectStationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D65E15081EA68A9E0012FF04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D65E15091EA68A9E0012FF04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D65E150D1EA68A9E0012FF04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D65E150E1EA68A9E0012FF04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D65E15111EA68A9E0012FF04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D65E15121EA68A9E0012FF04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D65E15141EA68A9E0012FF04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MetroNavigation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ATOM.MetroNavigation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D65E15151EA68A9E0012FF04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MetroNavigation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ATOM.MetroNavigation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D65E14F71EA68A9E0012FF04 /* Build configuration list for PBXProject "MetroNavigation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65E15111EA68A9E0012FF04 /* Debug */,
+				D65E15121EA68A9E0012FF04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D65E15131EA68A9E0012FF04 /* Build configuration list for PBXNativeTarget "MetroNavigation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65E15141EA68A9E0012FF04 /* Debug */,
+				D65E15151EA68A9E0012FF04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D65E14F41EA68A9E0012FF04 /* Project object */;
+}

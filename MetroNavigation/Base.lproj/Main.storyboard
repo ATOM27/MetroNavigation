@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CFT-zu-JEY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="AKV-rz-lWX">
+            <objects>
+                <navigationController id="CFT-zu-JEY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gJH-d8-z4u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="R1t-RB-krk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H6r-uS-qpg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-748" y="139"/>
+        </scene>
+        <!--Киев метро-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="EMMetroNavigationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Куда:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vlj-re-LVF">
+                                <rect key="frame" x="0.0" y="64" width="171.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="UFG-3u-bU8"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Откуда:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Ne-y1-tkJ">
+                                <rect key="frame" x="203.5" y="64" width="171.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="WPT-aD-rXQ"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resize.png" translatesAutoresizingMaskIntoConstraints="NO" id="zv5-IV-P9g">
+                                <rect key="frame" x="171.5" y="64" width="32" height="32"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4r9-4s-xmK">
+                                <rect key="frame" x="0.0" y="94" width="375" height="573"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="0MX-Ye-pKF" customClass="EMStationCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0MX-Ye-pKF" id="0C8-Z7-bme">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="go3-kr-cLb">
+                                                    <rect key="frame" x="83" y="11" width="284" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MFg-Qw-759">
+                                                    <rect key="frame" x="27" y="14" width="15" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.13309195639999999" green="0.51897799970000003" blue="0.68564885850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12.5f"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="circleView" destination="MFg-Qw-759" id="qpO-j9-2Im"/>
+                                            <outlet property="stationNameLabel" destination="go3-kr-cLb" id="1cC-Fb-gV2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="a5q-IL-Zyo"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="8ue-zI-tx8"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Ne-y1-tkJ" firstAttribute="width" secondItem="Vlj-re-LVF" secondAttribute="width" id="2H5-qk-gFD"/>
+                            <constraint firstItem="zv5-IV-P9g" firstAttribute="bottom" secondItem="Vlj-re-LVF" secondAttribute="bottom" constant="2" id="51J-n1-Ecj"/>
+                            <constraint firstItem="4r9-4s-xmK" firstAttribute="top" secondItem="4Ne-y1-tkJ" secondAttribute="bottom" id="5mr-zb-oeA"/>
+                            <constraint firstAttribute="trailing" secondItem="4r9-4s-xmK" secondAttribute="trailing" id="8Qh-Ic-g5T"/>
+                            <constraint firstItem="4r9-4s-xmK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8k9-zL-XQM"/>
+                            <constraint firstAttribute="trailing" secondItem="4Ne-y1-tkJ" secondAttribute="trailing" id="9d5-0i-mBk"/>
+                            <constraint firstItem="4Ne-y1-tkJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="AI1-8L-kpD"/>
+                            <constraint firstItem="zv5-IV-P9g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="E1F-AS-C3u"/>
+                            <constraint firstItem="4Ne-y1-tkJ" firstAttribute="leading" secondItem="zv5-IV-P9g" secondAttribute="trailing" id="McG-CZ-XIH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4r9-4s-xmK" secondAttribute="bottom" id="OgP-8N-UUk"/>
+                            <constraint firstItem="zv5-IV-P9g" firstAttribute="leading" secondItem="Vlj-re-LVF" secondAttribute="trailing" id="Q3E-4j-iCV"/>
+                            <constraint firstItem="Vlj-re-LVF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="a0A-uw-V5a"/>
+                            <constraint firstItem="4Ne-y1-tkJ" firstAttribute="width" secondItem="Vlj-re-LVF" secondAttribute="width" id="q29-bI-m76"/>
+                            <constraint firstItem="Vlj-re-LVF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zGt-Hs-Kdy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Киев метро" id="Yp2-vn-4QJ">
+                        <barButtonItem key="rightBarButtonItem" title="Карта" id="P0G-De-Tj8">
+                            <connections>
+                                <segue destination="kLz-Ae-1Hk" kind="show" id="NB7-uS-MBp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="destinationTextField" destination="4Ne-y1-tkJ" id="RGE-IY-zrP"/>
+                        <outlet property="sourceTextField" destination="Vlj-re-LVF" id="idr-gH-ZX7"/>
+                        <outlet property="tableView" destination="4r9-4s-xmK" id="UBx-9q-b0L"/>
+                        <segue destination="a6s-05-IWj" kind="show" identifier="searchStationSegue" id="I4B-EU-Phj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Карта-->
+        <scene sceneID="nwI-Km-LT9">
+            <objects>
+                <viewController title="Карта" id="kLz-Ae-1Hk" customClass="EMMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kc4-iL-dxh"/>
+                        <viewControllerLayoutGuide type="bottom" id="B8M-Yc-ayX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BJQ-oI-dti">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kyiv_metro.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vcg-GA-iFw">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B8M-Yc-ayX" firstAttribute="top" secondItem="Vcg-GA-iFw" secondAttribute="bottom" id="6Kk-Qk-W5k"/>
+                            <constraint firstItem="Vcg-GA-iFw" firstAttribute="leading" secondItem="BJQ-oI-dti" secondAttribute="leading" id="6NM-bj-biO"/>
+                            <constraint firstAttribute="trailing" secondItem="Vcg-GA-iFw" secondAttribute="trailing" id="Fxk-Ol-0NA"/>
+                            <constraint firstItem="Vcg-GA-iFw" firstAttribute="top" secondItem="Kc4-iL-dxh" secondAttribute="bottom" id="i7c-JK-Oj0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapImageView" destination="Vcg-GA-iFw" id="c4q-h0-ija"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZMO-o0-BWM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029.5999999999999" y="-546.47676161919048"/>
+        </scene>
+        <!--Станции-->
+        <scene sceneID="OBc-v3-Ad7">
+            <objects>
+                <tableViewController title="Станции" id="a6s-05-IWj" customClass="EMSelectStationViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="SJa-ZD-tR9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="QzR-OL-I3S">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="a6s-05-IWj" id="Tbk-wy-80D"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="XXZ-Fx-ZtU" customClass="EMStationCell">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XXZ-Fx-ZtU" id="iXX-0T-6PG">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMk-m3-Ji4">
+                                            <rect key="frame" x="83" y="11" width="284" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CE4-F8-T5d">
+                                            <rect key="frame" x="27" y="14" width="15" height="15"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.13309195639999999" green="0.51897799970000003" blue="0.68564885850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12.5f"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="circleView" destination="CE4-F8-T5d" id="NRh-4F-kyF"/>
+                                    <outlet property="stationNameLabel" destination="cMk-m3-Ji4" id="xVb-9K-3ch"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="a6s-05-IWj" id="2TJ-SR-c9C"/>
+                            <outlet property="delegate" destination="a6s-05-IWj" id="XcR-ZT-NBT"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="searchBar" destination="QzR-OL-I3S" id="84z-Oh-ty1"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tds-r6-IGp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1030" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kyiv_metro.png" width="2878" height="3024"/>
+        <image name="resize.png" width="32" height="32"/>
+    </resources>
+</document>
