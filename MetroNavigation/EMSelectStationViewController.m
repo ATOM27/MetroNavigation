@@ -136,7 +136,6 @@
 -(NSArray*) generateSectionsFromArray:(NSArray*) array withFilter:(NSString*) filterString{
     
     NSMutableArray* sectionsArray = [[NSMutableArray alloc] init];
-    NSString* currentLatter = nil;
     NSInteger lastStationColor = -1;
     
     for (EMBranch* currentBranch in array){

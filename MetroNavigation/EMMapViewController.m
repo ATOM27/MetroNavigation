@@ -46,35 +46,21 @@
     }
     
     CGFloat newScale = 1.f + pinchGesture.scale - self.testScale;
+    
     self.mapImageView.transform = CGAffineTransformScale(self.mapImageView.transform, newScale, newScale);
     
     self.testScale = pinchGesture.scale;
 }
 
--(void) handlePan:(UIPanGestureRecognizer*) panGesture{
-    
-    CGPoint pointInMainView = [panGesture locationInView:self.view];
-    CGPoint pointInCurrentView = [panGesture locationInView:self.mapImageView];
-    
-    self.delta = CGPointMake(CGRectGetMidX(self.mapImageView.bounds) - pointInCurrentView.x,
-                             CGRectGetMidY(self.mapImageView.bounds) - pointInCurrentView.y);
-
-                         self.mapImageView.center = CGPointMake(pointInMainView.x + self.delta.x,
-                                                                pointInMainView.y + self.delta.y);
-
-}
-
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
     for (UITouch* touch in touches){
         
-        CGPoint point = [touch locationInView:self.view];
-        
-        UIView* newView = [self.view hitTest:point withEvent:event];
-        
+        //CGPoint point = [touch locationInView:self.view];
             
             CGPoint pointInDraggingView = [touch locationInView:self.mapImageView];
             
-            self.delta = CGPointMake(CGRectGetMidX(self.mapImageView.bounds) - pointInDraggingView.x, CGRectGetMidY(self.mapImageView.bounds) - pointInDraggingView.y);
+            self.delta = CGPointMake(CGRectGetMidX(self.mapImageView.bounds) - pointInDraggingView.x,
+                                     CGRectGetMidY(self.mapImageView.bounds) - pointInDraggingView.y);
         
     }
     
@@ -84,16 +70,10 @@
     for (UITouch* touch in touches){
         
         CGPoint point = [touch locationInView:self.view];
-      
-            
-            self.mapImageView.center = CGPointMake(point.x + self.delta.x,
-                                                   point.y + self.delta.y);
-            
-            
-    
-        }
-    
-    
+
+        self.mapImageView.center = CGPointMake(point.x + self.delta.x,
+                                                  point.y + self.delta.y);
+    }
 }
 
 
